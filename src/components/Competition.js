@@ -16,17 +16,7 @@ export default function Competition(props) {
   return (
     <View>
       <View
-        style={{
-          width: '100%',
-          marginHorizontal: 1,
-          //   height: 200,
-          backgroundColor: 'rgba(	30, 113, 237, 0.1)',
-          borderRadius: 14,
-          borderWidth: 1.5,
-          borderColor: '#999',
-          marginVertical: 10,
-          padding: 15,
-        }}>
+        style={styles.component}>
         <View style={{flexDirection: 'row', justifyContent: 'space-between'}}>
           <Text style={{color: '#EEE', fontSize: 25, fontWeight: '700'}}>
            {props.name}
@@ -39,12 +29,7 @@ export default function Competition(props) {
               width: 45,
             }}>
             <Text
-              style={{
-                color: '#222',
-                fontSize: 17,
-                fontWeight: '700',
-                alignSelf: 'center',
-              }}>
+              style={styles.text3}>
               Offer
             </Text>
           </View>
@@ -105,7 +90,6 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingLeft: 15,
     paddingRight: 15,
-    // borderRadius: 5,
   },
   buttonText: {
     height: 40,
@@ -129,22 +113,20 @@ const styles = StyleSheet.create({
     fontSize: 19,
     color: '#222',
   },
+  component:{
+          width: '100%',
+          marginHorizontal: 1,
+          backgroundColor: 'rgba(	30, 113, 237, 0.1)',
+          borderRadius: 14,
+          borderWidth: 1.5,
+          borderColor: '#999',
+          marginVertical: 10,
+          padding: 15,
+        },
   input: {
-    // height: 50,
     marginHorizontal: 12,
-    // borderWidth: 0.4,
-    // padding: 10,
-    // width: '90%',
     fontSize: 20,
     marginTop: 20,
-    // height: 35,
-    // borderRadius:47,
-    // borderBottomRadius:30,
-    // overflow:"hidden",
-    // borderColor: '#EEE',
-    // backgroundColor: 'white',
-    // marginBottom: 30,
-    // backgroundColor: 'rgba(255,255, 255, 0)',
     opacity: 0.5,
   },
   inputs: {
@@ -155,5 +137,10 @@ const styles = StyleSheet.create({
     borderRadius: 13,
     color: 'white',
     borderColor: '#777',
-  },
+  },text3:{
+    color: '#222',
+    fontSize: 17,
+    fontWeight: '700',
+    alignSelf: 'center',
+    }
 });
