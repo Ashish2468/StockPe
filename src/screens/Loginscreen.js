@@ -34,14 +34,10 @@ export default function Loginscreen({navigation}) {
             colors={['#111', '#1E71ED']}
             style={styles.linearGradient}>
             <View
-              style={{
-                flex: 1,
-                alignItems: 'center',
-                justifyContent: 'center',
-              }}>
+              style={styles.img2}>
               <Image
                 source={require('../assets/Logomain.png')}
-                style={{width: 250, height: 90}}
+                style={styles.image}
               />
             </View>
           </LinearGradient>
@@ -70,6 +66,12 @@ const styles = StyleSheet.create({
     color: '#ffffff',
     backgroundColor: 'transparent',
   },
+  img2:{
+                flex: 1,
+                alignItems: 'center',
+                justifyContent: 'center',
+              },
+  image:{width: 250, height: 90},
 });
 // #1E71ED Dark blue
 // #33E6F6 Blue circle gradient
